@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dem">
+      <UniqueIdentifier>{635057e6-5884-4443-a2c6-9a2535eaa96e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graph">
+      <UniqueIdentifier>{85edc842-606b-4ab1-a81b-04ecbcf9c001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graph\producer">
+      <UniqueIdentifier>{5bc10882-a508-475d-addd-3e95e27f7477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ortho">
+      <UniqueIdentifier>{0d492bef-4c09-4d27-8a89-985b71e120f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\proland\dem\ElevationCurveData.cpp">
+      <Filter>dem</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\dem\ElevationGraphLayer.cpp">
+      <Filter>dem</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\dem\ElevationMargin.cpp">
+      <Filter>dem</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\dem\RoadElevationLayer.cpp">
+      <Filter>dem</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\dem\WaterElevationLayer.cpp">
+      <Filter>dem</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\Area.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\BasicCurvePart.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\BasicGraph.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\ComposedMargin.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\Curve.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\CurvePart.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\FileReader.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\FileWriter.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\Graph.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\GraphListener.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\LazyArea.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\LazyCurve.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\LazyGraph.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\LazyNode.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\LineCurvePart.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\Margin.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\Node.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\producer\CurveData.cpp">
+      <Filter>graph\producer</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\producer\CurveDataFactory.cpp">
+      <Filter>graph\producer</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\producer\GraphLayer.cpp">
+      <Filter>graph\producer</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\producer\GraphProducer.cpp">
+      <Filter>graph\producer</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\graph\producer\Tesselator.cpp">
+      <Filter>graph\producer</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ortho\FieldsOrthoLayer.cpp">
+      <Filter>ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ortho\ForestOrthoLayer.cpp">
+      <Filter>ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ortho\LineOrthoLayer.cpp">
+      <Filter>ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ortho\MaskOrthoLayer.cpp">
+      <Filter>ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ortho\OrthoMargin.cpp">
+      <Filter>ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ortho\RoadOrthoLayer.cpp">
+      <Filter>ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ortho\WaterOrthoLayer.cpp">
+      <Filter>ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\GraphPlugin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\proland\dem\ElevationCurveData.h">
+      <Filter>dem</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\dem\ElevationGraphLayer.h">
+      <Filter>dem</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\dem\ElevationMargin.h">
+      <Filter>dem</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\dem\RoadElevationLayer.h">
+      <Filter>dem</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\dem\WaterElevationLayer.h">
+      <Filter>dem</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\Area.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\BasicCurvePart.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\BasicGraph.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\ComposedMargin.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\Curve.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\CurvePart.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\FileReader.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\FileWriter.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\Graph.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\GraphListener.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\LazyArea.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\LazyCurve.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\LazyGraph.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\LazyNode.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\LineCurvePart.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\Margin.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\Node.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\producer\CurveData.h">
+      <Filter>graph\producer</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\producer\CurveDataFactory.h">
+      <Filter>graph\producer</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\producer\GetCurveDatasTask.h">
+      <Filter>graph\producer</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\producer\GraphLayer.h">
+      <Filter>graph\producer</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\producer\GraphProducer.h">
+      <Filter>graph\producer</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\graph\producer\Tesselator.h">
+      <Filter>graph\producer</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ortho\FieldsOrthoLayer.h">
+      <Filter>ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ortho\ForestOrthoLayer.h">
+      <Filter>ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ortho\LineOrthoLayer.h">
+      <Filter>ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ortho\MaskOrthoLayer.h">
+      <Filter>ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ortho\OrthoMargin.h">
+      <Filter>ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ortho\RoadOrthoLayer.h">
+      <Filter>ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ortho\WaterOrthoLayer.h">
+      <Filter>ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\GraphPlugin.h" />
+  </ItemGroup>
+</Project>

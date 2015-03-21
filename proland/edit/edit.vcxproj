@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{427E1468-4E5F-488B-87CA-E0EB25D2EB9B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>edit</RootNamespace>
+    <ProjectName>proland.edit</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;ATMO_EXPORTS;ORK_API=__declspec(dllimport);PROLAND_API=__declspec(dllexport);TIXML_USE_STL;_STDCALL_SUPPORTED;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>sources;..\..\ork;..\core\sources;..\terrain\sources;..\..\dependance;..\..\dependance\glew-1.5.6\include;..\..\dependance\pthreads\include;..\..\dependance\glut3.7;..\..\dependance\AntTweakBar\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\dependance\pthreads\lib;..\..\dependance\glut3.7;..\..\lib\$(Configuration);..\..\dependance\glew-1.5.6\lib;..\..\dependance\AntTweakBar\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;opengl32.lib;glu32.lib;glut32.lib;pthreadVCE2.lib;winmm.lib;orkd.lib;proland.core.lib;proland.terrain.lib;AntTweakBar.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>$(OutDir)..\..\lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;EDIT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\proland\EditPlugin.cpp" />
+    <ClCompile Include="sources\proland\edit\EditElevationProducer.cpp" />
+    <ClCompile Include="sources\proland\edit\EditGraphOrthoLayer.cpp" />
+    <ClCompile Include="sources\proland\edit\EditHydroGraphOrthoLayer.cpp" />
+    <ClCompile Include="sources\proland\edit\EditorHandler.cpp" />
+    <ClCompile Include="sources\proland\edit\EditOrthoCPUProducer.cpp" />
+    <ClCompile Include="sources\proland\edit\EditOrthoProducer.cpp" />
+    <ClCompile Include="sources\proland\edit\EditResidualProducer.cpp" />
+    <ClCompile Include="sources\proland\ui\twbar\TweakDemEditor.cpp" />
+    <ClCompile Include="sources\proland\ui\twbar\TweakGraphLayer.cpp" />
+    <ClCompile Include="sources\proland\ui\twbar\TweakHydroGraphLayer.cpp" />
+    <ClCompile Include="sources\proland\ui\twbar\TweakOrthoEditor.cpp" />
+    <ClCompile Include="sources\proland\ui\twbar\TweakRivers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\proland\EditPlugin.h" />
+    <ClInclude Include="sources\proland\edit\EditElevationProducer.h" />
+    <ClInclude Include="sources\proland\edit\EditGraphOrthoLayer.h" />
+    <ClInclude Include="sources\proland\edit\EditHydroGraphOrthoLayer.h" />
+    <ClInclude Include="sources\proland\edit\EditorHandler.h" />
+    <ClInclude Include="sources\proland\edit\EditOrthoCPUProducer.h" />
+    <ClInclude Include="sources\proland\edit\EditOrthoProducer.h" />
+    <ClInclude Include="sources\proland\edit\EditResidualProducer.h" />
+    <ClInclude Include="sources\proland\ui\twbar\TweakDemEditor.h" />
+    <ClInclude Include="sources\proland\ui\twbar\TweakGraphLayer.h" />
+    <ClInclude Include="sources\proland\ui\twbar\TweakHydroGraphLayer.h" />
+    <ClInclude Include="sources\proland\ui\twbar\TweakOrthoEditor.h" />
+    <ClInclude Include="sources\proland\ui\twbar\TweakRivers.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

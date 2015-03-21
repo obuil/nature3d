@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\proland\math\color.cpp" />
+    <ClCompile Include="sources\proland\math\noise.cpp" />
+    <ClCompile Include="sources\proland\particles\LifeCycleParticleLayer.cpp" />
+    <ClCompile Include="sources\proland\particles\ParticleLayer.cpp" />
+    <ClCompile Include="sources\proland\particles\ParticleProducer.cpp" />
+    <ClCompile Include="sources\proland\particles\ParticleStorage.cpp" />
+    <ClCompile Include="sources\proland\particles\RandomParticleLayer.cpp" />
+    <ClCompile Include="sources\proland\particles\screen\ParticleGrid.cpp" />
+    <ClCompile Include="sources\proland\particles\screen\ScreenParticleLayer.cpp" />
+    <ClCompile Include="sources\proland\particles\terrain\FlowTile.cpp" />
+    <ClCompile Include="sources\proland\particles\terrain\TerrainParticleLayer.cpp" />
+    <ClCompile Include="sources\proland\particles\WorldParticleLayer.cpp" />
+    <ClCompile Include="sources\proland\producer\CPUTileStorage.cpp" />
+    <ClCompile Include="sources\proland\producer\GPUTileStorage.cpp" />
+    <ClCompile Include="sources\proland\producer\ObjectTileStorage.cpp" />
+    <ClCompile Include="sources\proland\producer\TileCache.cpp" />
+    <ClCompile Include="sources\proland\producer\TileLayer.cpp" />
+    <ClCompile Include="sources\proland\producer\TileProducer.cpp" />
+    <ClCompile Include="sources\proland\producer\TileStorage.cpp" />
+    <ClCompile Include="sources\proland\terrain\CylindricalDeformation.cpp" />
+    <ClCompile Include="sources\proland\terrain\Deformation.cpp" />
+    <ClCompile Include="sources\proland\terrain\DrawTerrainTask.cpp" />
+    <ClCompile Include="sources\proland\terrain\ReadbackManager.cpp" />
+    <ClCompile Include="sources\proland\terrain\SphericalDeformation.cpp" />
+    <ClCompile Include="sources\proland\terrain\TerrainNode.cpp" />
+    <ClCompile Include="sources\proland\terrain\TerrainQuad.cpp" />
+    <ClCompile Include="sources\proland\terrain\TileSampler.cpp" />
+    <ClCompile Include="sources\proland\terrain\TileSamplerZ.cpp" />
+    <ClCompile Include="sources\proland\terrain\UpdateTerrainTask.cpp" />
+    <ClCompile Include="sources\proland\terrain\UpdateTileSamplersTask.cpp" />
+    <ClCompile Include="sources\proland\ui\BasicViewHandler.cpp" />
+    <ClCompile Include="sources\proland\ui\EventRecorder.cpp" />
+    <ClCompile Include="sources\proland\ui\MousePositionHandler.cpp" />
+    <ClCompile Include="sources\proland\ui\SceneVisitor.cpp" />
+    <ClCompile Include="sources\proland\ui\twbar\DrawTweakBarTask.cpp" />
+    <ClCompile Include="sources\proland\ui\twbar\TweakBarHandler.cpp" />
+    <ClCompile Include="sources\proland\ui\twbar\TweakBarManager.cpp" />
+    <ClCompile Include="sources\proland\ui\twbar\TweakResource.cpp" />
+    <ClCompile Include="sources\proland\ui\twbar\TweakSceneGraph.cpp" />
+    <ClCompile Include="sources\proland\ui\twbar\TweakViewHandler.cpp" />
+    <ClCompile Include="sources\proland\util\CylinderViewController.cpp" />
+    <ClCompile Include="sources\proland\util\mfs.cpp" />
+    <ClCompile Include="sources\proland\util\PlanetViewController.cpp" />
+    <ClCompile Include="sources\proland\util\TerrainViewController.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\proland\math\color.h" />
+    <ClInclude Include="sources\proland\math\geometry.h" />
+    <ClInclude Include="sources\proland\math\noise.h" />
+    <ClInclude Include="sources\proland\math\seg2.h" />
+    <ClInclude Include="sources\proland\particles\LifeCycleParticleLayer.h" />
+    <ClInclude Include="sources\proland\particles\ParticleLayer.h" />
+    <ClInclude Include="sources\proland\particles\ParticleProducer.h" />
+    <ClInclude Include="sources\proland\particles\ParticleStorage.h" />
+    <ClInclude Include="sources\proland\particles\RandomParticleLayer.h" />
+    <ClInclude Include="sources\proland\particles\screen\ParticleGrid.h" />
+    <ClInclude Include="sources\proland\particles\screen\ScreenParticleLayer.h" />
+    <ClInclude Include="sources\proland\particles\terrain\FlowTile.h" />
+    <ClInclude Include="sources\proland\particles\terrain\TerrainParticleLayer.h" />
+    <ClInclude Include="sources\proland\particles\WorldParticleLayer.h" />
+    <ClInclude Include="sources\proland\producer\CPUTileStorage.h" />
+    <ClInclude Include="sources\proland\producer\GPUTileStorage.h" />
+    <ClInclude Include="sources\proland\producer\ObjectTileStorage.h" />
+    <ClInclude Include="sources\proland\producer\TileCache.h" />
+    <ClInclude Include="sources\proland\producer\TileLayer.h" />
+    <ClInclude Include="sources\proland\producer\TileProducer.h" />
+    <ClInclude Include="sources\proland\producer\TileStorage.h" />
+    <ClInclude Include="sources\proland\terrain\CylindricalDeformation.h" />
+    <ClInclude Include="sources\proland\terrain\Deformation.h" />
+    <ClInclude Include="sources\proland\terrain\DrawTerrainTask.h" />
+    <ClInclude Include="sources\proland\terrain\ReadbackManager.h" />
+    <ClInclude Include="sources\proland\terrain\SphericalDeformation.h" />
+    <ClInclude Include="sources\proland\terrain\TerrainNode.h" />
+    <ClInclude Include="sources\proland\terrain\TerrainQuad.h" />
+    <ClInclude Include="sources\proland\terrain\TileSampler.h" />
+    <ClInclude Include="sources\proland\terrain\TileSamplerZ.h" />
+    <ClInclude Include="sources\proland\terrain\UpdateTerrainTask.h" />
+    <ClInclude Include="sources\proland\terrain\UpdateTileSamplersTask.h" />
+    <ClInclude Include="sources\proland\ui\BasicViewHandler.h" />
+    <ClInclude Include="sources\proland\ui\EventRecorder.h" />
+    <ClInclude Include="sources\proland\ui\MousePositionHandler.h" />
+    <ClInclude Include="sources\proland\ui\SceneVisitor.h" />
+    <ClInclude Include="sources\proland\ui\twbar\DrawTweakBarTask.h" />
+    <ClInclude Include="sources\proland\ui\twbar\TweakBarHandler.h" />
+    <ClInclude Include="sources\proland\ui\twbar\TweakBarManager.h" />
+    <ClInclude Include="sources\proland\ui\twbar\TweakResource.h" />
+    <ClInclude Include="sources\proland\ui\twbar\TweakSceneGraph.h" />
+    <ClInclude Include="sources\proland\ui\twbar\TweakViewHandler.h" />
+    <ClInclude Include="sources\proland\util\CylinderViewController.h" />
+    <ClInclude Include="sources\proland\util\mfs.h" />
+    <ClInclude Include="sources\proland\util\PlanetViewController.h" />
+    <ClInclude Include="sources\proland\util\TerrainViewController.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4EE3022B-3EC8-41C9-B0E6-18FC154CDB3B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>core</RootNamespace>
+    <ProjectName>proland.core</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>PROLAND_API=__declspec(dllexport);ORK_API=__declspec(dllimport);TIXML_USE_STL;_STDCALL_SUPPORTED;_CRT_SECURE_NO_WARNINGS;_M_IX86;_MBCS</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>sources;..\..\ork;..\..\dependance;..\..\dependance\glew-1.5.6\include;..\..\dependance\pthreads\include;..\..\dependance\glut3.7;..\..\dependance\AntTweakBar\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\dependance\pthreads\lib;..\..\dependance\glut3.7;..\..\lib\$(Configuration);..\..\dependance\glew-1.5.6\lib;..\..\dependance\AntTweakBar\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;opengl32.lib;glu32.lib;glut32.lib;pthreadVCE2.lib;winmm.lib;orkd.lib;AntTweakBar.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>$(OutDir)..\..\lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

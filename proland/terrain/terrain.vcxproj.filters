@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="dem">
+      <UniqueIdentifier>{0be57156-865f-4abd-825d-54e13b73e2f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ortho">
+      <UniqueIdentifier>{0c46be25-cb36-4726-987f-87164b676243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="preprocess">
+      <UniqueIdentifier>{373190eb-8aaf-4b52-83f6-6ab8dfd7588d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="preprocess\terrain">
+      <UniqueIdentifier>{944cc34a-fe45-4073-96a7-059989e77ec3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\proland\TerrainPlugin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\dem\CPUElevationProducer.cpp">
+      <Filter>dem</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\dem\ElevationProducer.cpp">
+      <Filter>dem</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\dem\NormalProducer.cpp">
+      <Filter>dem</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\dem\ResidualProducer.cpp">
+      <Filter>dem</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ortho\EmptyOrthoLayer.cpp">
+      <Filter>ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ortho\OrthoCPUProducer.cpp">
+      <Filter>ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ortho\OrthoGPUProducer.cpp">
+      <Filter>ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ortho\OrthoProducer.cpp">
+      <Filter>ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ortho\TextureLayer.cpp">
+      <Filter>ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\preprocess\terrain\AbstractTileCache.cpp">
+      <Filter>preprocess\terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\preprocess\terrain\ApertureMipmap.cpp">
+      <Filter>preprocess\terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\preprocess\terrain\ColorMipmap.cpp">
+      <Filter>preprocess\terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\preprocess\terrain\HeightMipmap.cpp">
+      <Filter>preprocess\terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\preprocess\terrain\Preprocess.cpp">
+      <Filter>preprocess\terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\preprocess\terrain\Util.cpp">
+      <Filter>preprocess\terrain</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\proland\TerrainPlugin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\dem\CPUElevationProducer.h">
+      <Filter>dem</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\dem\ElevationProducer.h">
+      <Filter>dem</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\dem\NormalProducer.h">
+      <Filter>dem</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\dem\ResidualProducer.h">
+      <Filter>dem</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ortho\EmptyOrthoLayer.h">
+      <Filter>ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ortho\OrthoCPUProducer.h">
+      <Filter>ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ortho\OrthoGPUProducer.h">
+      <Filter>ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ortho\OrthoProducer.h">
+      <Filter>ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ortho\TextureLayer.h">
+      <Filter>ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\preprocess\terrain\AbstractTileCache.h">
+      <Filter>preprocess\terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\preprocess\terrain\ApertureMipmap.h">
+      <Filter>preprocess\terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\preprocess\terrain\ColorMipmap.h">
+      <Filter>preprocess\terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\preprocess\terrain\HeightMipmap.h">
+      <Filter>preprocess\terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\preprocess\terrain\Preprocess.h">
+      <Filter>preprocess\terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\preprocess\terrain\Util.h">
+      <Filter>preprocess\terrain</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

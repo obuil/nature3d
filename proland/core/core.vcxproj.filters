@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="math">
+      <UniqueIdentifier>{844adc48-bff1-427c-9c71-bafeb5fb29db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="terrain">
+      <UniqueIdentifier>{ae8794e2-0815-4e7f-8f8c-c985debf653e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particles">
+      <UniqueIdentifier>{64d16818-2d1c-4784-8415-139fd6dcb3ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particles\screen">
+      <UniqueIdentifier>{c1329df3-2f08-4b08-ad1e-27ab5b996eb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="particles\terrain">
+      <UniqueIdentifier>{99d820c9-93ec-4a64-870b-9ded5f4a6269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="producer">
+      <UniqueIdentifier>{6820cd76-ddc9-43d0-bbf0-db1db7f0c385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{ca39ef8e-12e5-40a9-a765-004f362f4cec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{5caa0085-8bac-44a0-9c29-d38d023ba08f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\twbar">
+      <UniqueIdentifier>{383c4ac1-7ec7-493d-9df8-43114ea4d105}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\proland\math\color.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\math\noise.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\terrain\CylindricalDeformation.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\terrain\Deformation.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\terrain\DrawTerrainTask.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\terrain\ReadbackManager.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\terrain\SphericalDeformation.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\terrain\TerrainNode.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\terrain\TerrainQuad.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\terrain\TileSampler.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\terrain\TileSamplerZ.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\terrain\UpdateTerrainTask.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\terrain\UpdateTileSamplersTask.cpp">
+      <Filter>terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\particles\LifeCycleParticleLayer.cpp">
+      <Filter>particles</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\particles\ParticleLayer.cpp">
+      <Filter>particles</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\particles\ParticleProducer.cpp">
+      <Filter>particles</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\particles\ParticleStorage.cpp">
+      <Filter>particles</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\particles\RandomParticleLayer.cpp">
+      <Filter>particles</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\particles\WorldParticleLayer.cpp">
+      <Filter>particles</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\particles\terrain\FlowTile.cpp">
+      <Filter>particles\terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\particles\terrain\TerrainParticleLayer.cpp">
+      <Filter>particles\terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\particles\screen\ParticleGrid.cpp">
+      <Filter>particles\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\particles\screen\ScreenParticleLayer.cpp">
+      <Filter>particles\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\producer\CPUTileStorage.cpp">
+      <Filter>producer</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\producer\GPUTileStorage.cpp">
+      <Filter>producer</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\producer\ObjectTileStorage.cpp">
+      <Filter>producer</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\producer\TileCache.cpp">
+      <Filter>producer</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\producer\TileLayer.cpp">
+      <Filter>producer</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\producer\TileProducer.cpp">
+      <Filter>producer</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\producer\TileStorage.cpp">
+      <Filter>producer</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ui\BasicViewHandler.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ui\EventRecorder.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ui\MousePositionHandler.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ui\SceneVisitor.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ui\twbar\DrawTweakBarTask.cpp">
+      <Filter>ui\twbar</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ui\twbar\TweakBarHandler.cpp">
+      <Filter>ui\twbar</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ui\twbar\TweakBarManager.cpp">
+      <Filter>ui\twbar</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ui\twbar\TweakResource.cpp">
+      <Filter>ui\twbar</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ui\twbar\TweakSceneGraph.cpp">
+      <Filter>ui\twbar</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ui\twbar\TweakViewHandler.cpp">
+      <Filter>ui\twbar</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\util\CylinderViewController.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\util\mfs.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\util\PlanetViewController.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\util\TerrainViewController.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\proland\math\color.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\math\geometry.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\math\noise.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\math\seg2.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\terrain\CylindricalDeformation.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\terrain\Deformation.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\terrain\DrawTerrainTask.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\terrain\ReadbackManager.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\terrain\SphericalDeformation.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\terrain\TerrainNode.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\terrain\TerrainQuad.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\terrain\TileSampler.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\terrain\TileSamplerZ.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\terrain\UpdateTerrainTask.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\terrain\UpdateTileSamplersTask.h">
+      <Filter>terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\particles\LifeCycleParticleLayer.h">
+      <Filter>particles</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\particles\ParticleLayer.h">
+      <Filter>particles</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\particles\ParticleProducer.h">
+      <Filter>particles</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\particles\ParticleStorage.h">
+      <Filter>particles</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\particles\RandomParticleLayer.h">
+      <Filter>particles</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\particles\WorldParticleLayer.h">
+      <Filter>particles</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\particles\terrain\FlowTile.h">
+      <Filter>particles\terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\particles\terrain\TerrainParticleLayer.h">
+      <Filter>particles\terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\particles\screen\ParticleGrid.h">
+      <Filter>particles\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\particles\screen\ScreenParticleLayer.h">
+      <Filter>particles\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\producer\CPUTileStorage.h">
+      <Filter>producer</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\producer\GPUTileStorage.h">
+      <Filter>producer</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\producer\ObjectTileStorage.h">
+      <Filter>producer</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\producer\TileCache.h">
+      <Filter>producer</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\producer\TileLayer.h">
+      <Filter>producer</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\producer\TileProducer.h">
+      <Filter>producer</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\producer\TileStorage.h">
+      <Filter>producer</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ui\BasicViewHandler.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ui\EventRecorder.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ui\MousePositionHandler.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ui\SceneVisitor.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ui\twbar\DrawTweakBarTask.h">
+      <Filter>ui\twbar</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ui\twbar\TweakBarHandler.h">
+      <Filter>ui\twbar</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ui\twbar\TweakBarManager.h">
+      <Filter>ui\twbar</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ui\twbar\TweakResource.h">
+      <Filter>ui\twbar</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ui\twbar\TweakSceneGraph.h">
+      <Filter>ui\twbar</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ui\twbar\TweakViewHandler.h">
+      <Filter>ui\twbar</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\util\CylinderViewController.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\util\mfs.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\util\PlanetViewController.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\util\TerrainViewController.h">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

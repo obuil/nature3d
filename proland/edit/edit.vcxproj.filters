@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="edit">
+      <UniqueIdentifier>{826be8eb-e027-4b6d-a6b1-f35b6860c314}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{930097ca-5772-4896-b7dd-e026055c4907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\twbar">
+      <UniqueIdentifier>{4b1bb1ab-2bdb-47b6-9482-6f91e1b1ce01}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\proland\edit\EditElevationProducer.cpp">
+      <Filter>edit</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\edit\EditGraphOrthoLayer.cpp">
+      <Filter>edit</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\edit\EditHydroGraphOrthoLayer.cpp">
+      <Filter>edit</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\edit\EditorHandler.cpp">
+      <Filter>edit</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\edit\EditOrthoCPUProducer.cpp">
+      <Filter>edit</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\edit\EditOrthoProducer.cpp">
+      <Filter>edit</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\edit\EditResidualProducer.cpp">
+      <Filter>edit</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ui\twbar\TweakDemEditor.cpp">
+      <Filter>ui\twbar</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ui\twbar\TweakGraphLayer.cpp">
+      <Filter>ui\twbar</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ui\twbar\TweakHydroGraphLayer.cpp">
+      <Filter>ui\twbar</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ui\twbar\TweakOrthoEditor.cpp">
+      <Filter>ui\twbar</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\ui\twbar\TweakRivers.cpp">
+      <Filter>ui\twbar</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\proland\EditPlugin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\proland\edit\EditElevationProducer.h">
+      <Filter>edit</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\edit\EditGraphOrthoLayer.h">
+      <Filter>edit</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\edit\EditHydroGraphOrthoLayer.h">
+      <Filter>edit</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\edit\EditorHandler.h">
+      <Filter>edit</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\edit\EditOrthoCPUProducer.h">
+      <Filter>edit</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\edit\EditOrthoProducer.h">
+      <Filter>edit</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\edit\EditResidualProducer.h">
+      <Filter>edit</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ui\twbar\TweakDemEditor.h">
+      <Filter>ui\twbar</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ui\twbar\TweakGraphLayer.h">
+      <Filter>ui\twbar</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ui\twbar\TweakHydroGraphLayer.h">
+      <Filter>ui\twbar</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ui\twbar\TweakOrthoEditor.h">
+      <Filter>ui\twbar</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\ui\twbar\TweakRivers.h">
+      <Filter>ui\twbar</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\proland\EditPlugin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
