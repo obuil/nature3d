@@ -49,7 +49,7 @@ namespace proland
  * @ingroup rivergraph
  * @author Antoine Begault, Guillaume Piolat
  */
-PROLAND_API class HydroGraph : public BasicGraph
+class PROLAND_API  HydroGraph : public BasicGraph
 {
 public:
     /**

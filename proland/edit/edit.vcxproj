@@ -55,13 +55,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;ATMO_EXPORTS;ORK_API=__declspec(dllimport);PROLAND_API=__declspec(dllexport);TIXML_USE_STL;_STDCALL_SUPPORTED;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>sources;..\..\ork;..\core\sources;..\terrain\sources;..\..\dependance;..\..\dependance\glew-1.5.6\include;..\..\dependance\pthreads\include;..\..\dependance\glut3.7;..\..\dependance\AntTweakBar\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>sources;..\..\ork;..\core\sources;..\terrain\sources;..\graph\sources;..\river\sources;..\..\dependance;..\..\dependance\glew-1.5.6\include;..\..\dependance\pthreads\include;..\..\dependance\glut3.7;..\..\dependance\AntTweakBar\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>..\..\dependance\pthreads\lib;..\..\dependance\glut3.7;..\..\lib\$(Configuration);..\..\dependance\glew-1.5.6\lib;..\..\dependance\AntTweakBar\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glew32.lib;opengl32.lib;glu32.lib;glut32.lib;pthreadVCE2.lib;winmm.lib;orkd.lib;proland.core.lib;proland.terrain.lib;AntTweakBar.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glew32.lib;opengl32.lib;glu32.lib;glut32.lib;pthreadVCE2.lib;winmm.lib;orkd.lib;proland.core.lib;proland.terrain.lib;proland.graph.lib;proland.river.lib;AntTweakBar.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>$(OutDir)..\..\lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>

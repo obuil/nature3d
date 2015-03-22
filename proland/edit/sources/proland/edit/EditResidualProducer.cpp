@@ -288,8 +288,17 @@ float EditResidualProducer::getDeltaElevation(int level, int w, int n, int tx, i
     y += ty * w;
     int nw = n * w;
     if (x >= 0 && x <= nw && y >= 0 && y <= nw) {
-        tx = min(x, nw - 1) / w;
-        ty = min(y, nw - 1) / w;
+		if (x < nw - 1)
+		{
+			tx = x / w;
+			ty = x / w;
+		}
+		else
+		{
+			tx = (nw - 1) / w;
+			ty = (nw - 1) / w;
+		}
+        
         x = (x == nw ? w : x % w);
         y = (y == nw ? w : y % w);
 
