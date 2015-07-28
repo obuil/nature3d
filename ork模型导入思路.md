@@ -114,10 +114,14 @@ object的每个draw的OjbectMethod内容如下，须按照顺序先setProgram，
     先get到当前的program，然后  draw(prog, meshbuffers, m->mode, 0, m->nindices)。
 
 
+> 6. 关于task、method和AbstractTask
+
+QualifiedName：对 形似：this.draw的抽象
 
 
 ### 2. 确定obj的导入结构？
 
+一些约定：
 
 
 
