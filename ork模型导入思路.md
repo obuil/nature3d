@@ -5,11 +5,14 @@ grammar_cjkRuby: true
 ---
 --------
 
-> 1.先走通大结构，那就是SceneNode与mesh的兼容关系，还有drawMethod与SceneNode的关系
-> 2.然后再纠结mesh与buffer的逻辑
-> 3.分析SceneNode的逻辑：
+1.先走通大结构，那就是SceneNode与mesh的兼容关系，还有drawMethod与SceneNode的关系
+2.然后再纠结mesh与buffer的逻辑
+3.分析SceneNode的逻辑：
+--------
 
 
+
+### 1.分析SceneNode
 
 > 1.SceneNode
     
@@ -25,9 +28,12 @@ grammar_cjkRuby: true
     module是为program服务的
     A module can specify some initial values for its uniform variables, and  can also specify which output varying variable must be recorded in transform feedback mode
     在 Ork中，一个 Program 由一到多个Module链接组成。
+
     
 > 3. Value:(略)
 > 4. Method:method就是为SceneNode服务的，method与task对应。
+> 5. 物体绘制的执行流程：
+
 
 绘制动力从SceneManager开始，在scenemanager的draw方法中，会先执行camera的drawTask：
 
@@ -72,7 +78,8 @@ grammar_cjkRuby: true
     </sequence>
 
 
-object draw method中内容,顺序：
+
+object的每个draw的OjbectMethod内容如下，须按照顺序先setProgram，再调用drawmesh方法，所以此处setProgram任务很关键。
 
     <?xml version="1.0" ?>
     <sequence> 
@@ -84,9 +91,7 @@ object draw method中内容,顺序：
         <setTransforms localToScreen="localToScreen" localToWorld="localToWorld"/>
         <drawMesh name="this.geometry"/>
     </sequence>
-    
-   每个method中 肯定有setProgram task，因为看到 
-   DrawMeshTask：
+      我们再看看具体的DrawMeshTask是如何执行的：     DrawMeshTask：
   
 
      bool DrawMeshTask::Impl::run()
@@ -106,9 +111,16 @@ object draw method中内容,顺序：
             return true;
         }
 
-   
-   
-   
+    先get到当前的program，然后  draw(prog, meshbuffers, m->mode, 0, m->nindices)。
+
+
+
+
+### 2. 确定obj的导入结构？
+
+
+
+
 
 
 
